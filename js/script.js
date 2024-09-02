@@ -20,6 +20,7 @@ async function getSongs(folder) {
   let a = await fetch(`songs/${folder}/`);
   let responce = await a.text();
   let div = document.createElement("div");
+  console.log(div);
   div.innerHTML = responce;
   let as = div.getElementsByTagName("a");
   songs = [];
